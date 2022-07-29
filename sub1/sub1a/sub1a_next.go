@@ -1,8 +1,12 @@
 package sub1a
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func Sub1a_3(x int) int {
+	http.ListenAndServe("", nil)
 	res := x * x
 	fmt.Println("sub1a_3 says :", res)
 	return res

@@ -2,7 +2,6 @@ package sub1a
 
 import (
 	"fmt"
-	"net/http"
 )
 
 func PublicGeneric(y int) int {
@@ -20,7 +19,6 @@ func Sub1a_1(x int) int {
 }
 
 func Sub1a_2(x int) int {
-	http.ListenAndServe("", nil)
 	res := x * x + PublicGeneric(x) + privateGeneric(x)
 	fmt.Println("sub1a_2 says :", res)
 	return res
