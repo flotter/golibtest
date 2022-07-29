@@ -1,6 +1,9 @@
 package sub1a
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func PublicGeneric(y int) int {
 	return y + 1
